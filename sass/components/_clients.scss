@@ -1,0 +1,44 @@
+.clients {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__link {
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    color: #afb1b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 92px;
+    
+    padding: 16px 52px;
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+      padding: 16px 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+      padding: 16px 32px;
+    }
+
+    /* Transition */
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $color-accent;
+      border: 1px solid $color-accent;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
