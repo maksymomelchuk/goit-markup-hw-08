@@ -28,7 +28,7 @@
 
   @media screen and (min-width: 1200px) {
     justify-content: flex-start;
-}
+  }
 }
 
 .contacts-wrapper {
@@ -36,6 +36,10 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-contacts {
@@ -84,7 +88,7 @@
 
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
-}
+  }
 
   &__title {
     font-weight: 700;

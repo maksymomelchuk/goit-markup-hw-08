@@ -10,8 +10,12 @@
       ),
       url('../images/bg.jpg');
     max-width: 1600px;
-    height: 600px;
+    height: 400px;
     margin: 0 auto;
+
+    @media screen and (min-width: 1200px) {
+      height: 600px;
+    }
   }
 
   &__title {
