@@ -64,33 +64,33 @@
           </div>
           <button
             type="button"
-            class="burger__btn"
+            class="burger__btn burger__btn--menu"
             aria-expanded="false"
-            data-menu-button
+            data-menu-open
           >
             <svg width="40" height="40" aria-label="Перемикач мобільного меню">
               <use
-                class="burger__btn--menu"
+                class="burger__icon--menu"
                 href="./images/sprite.svg#menu"
               ></use>
             </svg>
           </button>
         </div>
-        <div class="mob">
+        <div class="mob is-hidden" data-menu>
           <div class="mob__wrapper">
             <button
               type="button"
-              class="burger__btn"
+              class="burger__btn burger__btn--close"
               aria-expanded="false"
-              data-menu
+              data-menu-close
             >
-              <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-                <!-- <use
-                  class="burger__btn--menu"
-                  href="./images/sprite.svg#menu"
-                ></use> -->
+              <svg
+                width="40"
+                height="40"
+                aria-label="Перемикач мобільного меню"
+              >
                 <use
-                  class="burger__btn--close"
+                  class="burger__icon--close"
                   href="./images/sprite.svg#close"
                 ></use>
               </svg>
@@ -98,7 +98,11 @@
             <nav>
               <ul class="mob-navigation list">
                 <li class="mob-navigation__item">
-                  <a class="mob-navigation__link link-accent" href="#">Студія</a>
+                  <a
+                    class="mob-navigation__link link-accent mob-navigation__link--active"
+                    href="#"
+                    >Студія</a
+                  >
                 </li>
                 <li class="mob-navigation__item">
                   <a
@@ -141,7 +145,6 @@
               </li>
             </ul>
           </div>
-          
         </div>
       </div>
     </header>
