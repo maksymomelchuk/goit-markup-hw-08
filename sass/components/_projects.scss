@@ -28,9 +28,12 @@
 
   &__img {
     display: block;
-    width: 450px;    
     height: 294px;
     object-fit: cover;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
 
     @media screen and (min-width: 768px) {
       width: 354px;
@@ -44,9 +47,13 @@
   &__article {
     border: 1px solid #eeeeee;
     border-top: none;
-    width: 450px;
+    width: 100%;
     padding: 20px 24px;
     flex: 1;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
 
     @media screen and (min-width: 768px) {
       width: 354px;

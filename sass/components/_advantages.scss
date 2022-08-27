@@ -8,11 +8,10 @@
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: 1200px) {
-  }
-
   &__item {
-    width: 450px;
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
 
     @media screen and (min-width: 768px) {
       width: 354px;
@@ -26,15 +25,16 @@
   &__block {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 120px;
     background: $color-bg-light;
     border-radius: 4px;
     margin-bottom: 30px;
-  }
 
-  &__icon {
-    width: 450px;
-    height: 120px;
-    padding: 25px 190px;
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      padding: 25px 190px;
+    }
 
     @media screen and (min-width: 768px) {
       padding: 25px 142px;
@@ -45,6 +45,11 @@
       width: 270px;
       padding: 25px 100px;
     }
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
   }
 
   &__title {

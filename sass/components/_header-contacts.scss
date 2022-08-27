@@ -1,5 +1,4 @@
 .contacts {
-  
   display: none;
 
   @media screen and (min-width: 768px) {
@@ -27,7 +26,7 @@
     @media screen and (min-width: 1200px) {
       font-size: 14px;
       line-height: 1.14;
-}
+    }
   }
 
   &__icon {
@@ -36,9 +35,5 @@
     height: 16px;
     margin-right: 10px;
     fill: currentColor;
-
-    // @media screen and (min-width: 768px) {
-    //   display: block;
-    // }
   }
 }
