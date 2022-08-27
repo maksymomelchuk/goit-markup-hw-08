@@ -20,29 +20,11 @@
     <header class="header">
       <!-- Flex container -->
       <div class="container header__container">
-        <!-- Logo -->
-        <a href="./index.html" class="logo"
-          >Web<span class="logo--header">Studio</span></a
-        >
-        <!-- Navigation bar -->
-        <button
-          type="button"
-          class="burger__btn"
-          aria-expanded="false"
-          data-menu-button
-        >
-          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-            <use
-              class="burger__btn--menu"
-              href="./images/sprite.svg#menu"
-            ></use>
-            <use
-              class="burger__btn--close"
-              href="./images/sprite.svg#close"
-            ></use>
-          </svg>
-        </button>
         <div class="menu-wrapper">
+          <!-- Logo -->
+          <a href="./index.html" class="logo"
+            >Web<span class="logo--header">Studio</span></a
+          >
           <nav>
             <ul class="navigation list">
               <li class="navigation__item">
@@ -79,6 +61,71 @@
               </svg>
               +38 096 111 11 11</a
             >
+          </div>
+          <button
+            type="button"
+            class="burger__btn"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use
+                class="burger__btn--menu"
+                href="./images/sprite.svg#menu"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mob">
+          <div class="mob__wrapper">
+            <button
+              type="button"
+              class="burger__btn"
+              aria-expanded="false"
+              data-menu
+            >
+              <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                <!-- <use
+                  class="burger__btn--menu"
+                  href="./images/sprite.svg#menu"
+                ></use> -->
+                <use
+                  class="burger__btn--close"
+                  href="./images/sprite.svg#close"
+                ></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="mob-navigation list">
+                <li class="mob-navigation__item">
+                  <a class="mob-navigation__link link-accent" href="#">Студія</a>
+                </li>
+                <li class="mob-navigation__item">
+                  <a
+                    class="mob-navigation__link link-accent"
+                    href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="mob-navigation__item">
+                  <a class="mob-navigation__link link-accent" href="#"
+                    >Контакти</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob-contacts">
+            <a class="mob-contacts__link link-accent" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+            <a
+              class="mob-contacts__link link-accent"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
+
             <ul class="contacts-social list">
               <li class="contacts-social__item">
                 <a class="contacts-social__link" href="#"> Instagram </a>
@@ -94,6 +141,7 @@
               </li>
             </ul>
           </div>
+          
         </div>
       </div>
     </header>

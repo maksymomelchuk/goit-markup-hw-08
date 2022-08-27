@@ -1,17 +1,6 @@
-
 .header {
   border-bottom: 1px solid $color-light-grey;
-  // position: relative;
-
 
   &__container {
-    display: flex;
-    align-items: center;
-    position: relative;
-
-    @media screen and (min-width: 768px) {
-      // padding-top: 21px;
-      // padding-bottom: 21px;
-}
   }
 }
