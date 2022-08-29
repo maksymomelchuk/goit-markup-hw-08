@@ -7,30 +7,31 @@
   color: $color-accent;
   text-decoration: none;
 
-  @media screen and (max-width: 767px) {
-    padding: 16px 0;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 26px;
-    line-height: 1.19;
-  }
-
   &--header {
-    color: $color-black;
+    padding: 16px 0;
 
     @media screen and (min-width: 768px) {
+      padding: 0;
       margin-right: 88px;
     }
 
     @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.19;
       margin-right: 93px;
+    }
+
+    span {
+      color: $color-black;
     }
   }
 
   &--footer {
     display: inline-block;
     margin-bottom: 20px;
-    color: $color-white;
+
+    span {
+      color: $color-white;
+    }
   }
 }

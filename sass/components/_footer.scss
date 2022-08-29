@@ -22,7 +22,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
   }
 
@@ -39,6 +39,7 @@
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
+    align-items: flex-start;
   }
 }
 
@@ -46,6 +47,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
 
   &__item {
     &:not(:last-child) {
