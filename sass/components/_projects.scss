@@ -10,6 +10,18 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+    }
+
     &:hover .projects__hidden-text {
       transform: translateY(0);
     }
@@ -24,24 +36,6 @@
   &__thumb {
     position: relative;
     overflow: hidden;
-  }
-
-  &__img {
-    display: block;
-    height: 294px;
-    object-fit: cover;
-
-    @media screen and (min-width: 480px) {
-      width: 450px;
-    }
-
-    @media screen and (min-width: 768px) {
-      width: 354px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: 370px;
-    }
   }
 
   &__article {
