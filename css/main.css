@@ -271,7 +271,7 @@ img {
     display: none;
   }
 }
-.burger__btn--menu {
+.burger__btn--open {
   align-items: center;
   justify-content: center;
 }
@@ -667,11 +667,11 @@ img {
   background-color: #2196f3;
   color: #ffffff;
 }
-.social__link--footer {
+.social__link--dark {
   background-color: rgba(255, 255, 255, 0.1);
   color: #ffffff;
 }
-.social__link--footer:hover, .social__link--footer:focus {
+.social__link--dark:hover, .social__link--dark:focus {
   background-color: #2196f3;
 }
 .social__icon {
@@ -682,9 +682,6 @@ img {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social__icon--dark {
-  fill: currentColor;
 }
 
 .clients {
